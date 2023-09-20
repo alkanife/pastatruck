@@ -135,6 +135,14 @@ a:hover {
 }
 
 
+.img-offer-always {
+    max-height: 246px;
+
+    min-height: 160px;
+    min-width: 160px;
+}
+
+
 .week-offer {
     user-select: none;
     cursor: pointer;
