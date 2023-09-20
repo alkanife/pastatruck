@@ -5,77 +5,88 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fast & Frites | Foodtruck Compiègne</title>
     
+    <title>Pastatruck | Projet d'école</title>
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     
+    <!-- Bootstrap, Font Awesome, & custom -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- Navigation bar -->
     <nav class="navbar navbar-dark navbar-expand-lg shadow">
         <div class="container">
+            <!-- Title -->
             <a class="navbar-brand cursive yellow" href="#">Pastatruck 🍝</a>
+            
+            <!-- Menu burger -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
+            <!-- Links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Menus</a>
+                        <a class="nav-link" href="menus.html">Menus</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Où suis-je ?</a>
+                        <a class="nav-link" href="#find-us">Nous trouver</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Avis</a>
+                        <a class="nav-link" href="feedback.html">Avis</a>
                     </li>
                     <hr>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold yellow" href="#">Commander par appel ou SMS au <u>06 12 34 56 78</u></a>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link fw-bold yellow nav-command">Commander par appel ou SMS au <u>06 12 34 56 78</u></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     
+    <!-- Banner/Header -->
     <div id="banner" class="border-bottom border-secondary">
-        <div class="banner-text d-flex flex-column align-items-center">
-            <h2 class="cursive display-6 mt-4">La simplicité a bon prix !</h2>
-            <a class="btn btn-outline-light mt-2">Tel.: 06 12 34 56 78</a>
+        <div class="banner-text d-flex flex-column align-items-center justify-content-center">
+            <h2 class="cursive display-6">La simplicité a bon prix !</h2>
+            <a class="ff-big phone-button">Tel.: 06 12 34 56 78</a>
         </div>
     </div>
     
     <div class="container my-3">
         <div class="mb-3">
-            <h3 class="display-6 fw-bold my-4">Plat de la semaine ⚡️</h3>
+            <h3 class="display-6 mt-4 mb-4 ff-big">⚡️ Le plat de la semaine</h3>
             
-            <div class="row bg-card py-3">
-                <div class="col">
-                    <img src="assets/img/menu/pates-truffe.png" alt="pates a la truffe" class="img-fluid">
+            <div class="row">
+                <div class="col-12 col-xl-6 d-flex bg-card p-0 p-2 week-offer">
+                    <div style="background: red;">
+                        <img src="assets/img/menu/pates-truffe.png" alt="pates a la truffe" class="img-fluid">
+                    </div>
+                    
+                    <div class="offer-details ps-3 ps-lg-4">
+                        <h4 class="name m-0 p-0 pt-2 fw-bold">Pâtes à la truffe</h4>
+                        <p class="pt-3">Un peu de changement ! Nous avons collaboré avec... <span>(voir plus)</span></p>
+                        <p class="cursive yellow display-6 price m-0 p-0">8,99 € / 1 pers.</p>
+                    </div>
                 </div>
-                
-                <div class="col offer-details">
-                    <h4 class="name m-0 p-0 pt-2 fw-bold">Pâtes à la truffe</h4>
-                    <p class="pt-3">Un peu de changement ! Nous avons collaboré avec... <span>(voir plus)</span></p>
-                    <p class="cursive yellow display-6 price m-0 p-0">8,99 € / 1 pers.</p>
+                <div class="col-12 col-xl-6 d-flex align-items-center justify-content-center flex-column mt-4 m-xl-0">
+                    <a class="menu-button-trans text-center mb-2 mb-xl-5" href="menus.html">Voir le menu complet</a>
+                    <a class="menu-button text-center">Commander 🔥</a>
                 </div>
-            </div>
-            
-            <div class="d-flex align-items-center justify-content-center flex-column mt-3" style="height: 100px">
-                <a class="menu-button-trans text-center mb-2">Voir le menu complet</a>
-                <a class="menu-button text-center">Commander 🔥</a>
             </div>
         </div>
         
-        <div>
-            <h3 class="fw- display-6 fw-bold my-4">️Où nous trouver 📌</h3>
+        <div id="find-us">
+            <h3 class="display-6 mt-5 mb-4 ff-big">️📌 Où nous trouver aujourd'hui ?</h3>
             
             <div class="row">
                 <div class="col-12 p-0">
@@ -97,16 +108,22 @@
             </div>
         </div>
         
+        <!-- Footer -->
         <footer class="mt-5 mb-3">
+            <!-- Social -->
             <div class="text-center mb-3">
-                <i class="fa-brands fa-twitter me-3"></i>
-                <i class="fa-brands fa-facebook me-3"></i>
-                <i class="fa-brands fa-tiktok me-3"></i>
-                <i class="fa-brands fa-instagram"></i>
+                <a><i class="fa-brands fa-twitter me-3"></i></a>
+                <a><i class="fa-brands fa-facebook me-3"></i></a>
+                <a><i class="fa-brands fa-tiktok me-3"></i></a>
+                <a><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <div class="text-center mt-4 mb-3">
-                <a href="#" class="me-3">Crédits</a> <a href="#">Mentions légales</a>
+            
+            <!-- Legal -->
+            <div class="text-center mt-4 mb-3 legal">
+                <a href="#" class="me-3">Crédits</a><a class="ms-2">Mentions légales</a>
             </div>
+            
+            <!-- Copyright -->
             <p class="text-center">&copy; 2023 Pastatruck Compiègne</p>
         </footer>
     </div>

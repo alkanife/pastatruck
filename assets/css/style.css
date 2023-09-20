@@ -1,14 +1,27 @@
-/*
- */
-
 body {
     font-family: 'Raleway', sans-serif;
     color: white;
     background: #292c2f;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+a:hover {
+    cursor: pointer;
+    color: white;
+}
+
+
 .cursive {
     font-family: 'Lobster', cursive;
+}
+
+.ff-big {
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .navbar {
@@ -29,9 +42,10 @@ body {
 
 #banner {
     margin-top: 56px;
-    background: url('../../pasta-3547078_1280.jpg') no-repeat ;
+    background: url('../img/header.jpg') no-repeat ;
     background-size: cover;
-    height: 150px;
+    min-height: 150px;
+    height: 20vw;
 }
 
 #banner .banner-text {
@@ -41,6 +55,21 @@ body {
 
 #banner .banner-text p {
     width: fit-content;
+}
+
+.phone-button {
+    margin-top: 2%;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px white solid;
+    font-size: 140%;
+}
+
+.phone-button:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
 }
 
 .bg-card {
@@ -93,12 +122,36 @@ body {
 img {
     max-height: 246px;
     max-width: 246px;
+
+    min-height: 160px;
+    min-width: 160px;
+}
+
+.week-offer {
+    user-select: none;
+    cursor: pointer;
 }
 
 .planning h5 {
     font-size: 30px;
 }
 
+.active {
+    font-weight: bold;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
 footer a {
     color: white;
+}
+
+footer a:hover {
+    opacity: .70;
+}
+
+footer .legal {
+    text-decoration: underline;
 }
