@@ -1,41 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Foodtruck</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Pastatruck | Projet d'école</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap, Font Awesome, & custom -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+<!-- Navigation bar -->
+<nav class="navbar navbar-dark navbar-expand-lg shadow">
+    <div class="container">
+        <!-- Title -->
+        <a class="navbar-brand cursive yellow" href="#">Pastatruck 🍝</a>
+        
+        <!-- Menu burger -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Menus</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="feedback.html">Avis</a>
+                </li>
+                <hr>
+                <li class="nav-item d-lg-none">
+                    <a class="nav-link fw-bold yellow nav-command">Commander par appel ou SMS au <u>06 12 34 56 78</u></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
     <!--Debut de la page Menu-->
 
 
-    <div class="container"> <!--Début div principal-->
+    <div class="container" id="menus"> <!--Début div principal-->
+        
+        
+        <h3 class="display-6 mt-4 mb-4 ff-big">Nos menus</h3>
 
 <!--Utilisation des cards de bootstrap pour les menus en intégrant une list group de bootstrap-->
 
         <!-- Premier Menu- Menu du moment-->
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="assets/img/menu/Pates-a-la-truffe-de-Big-Mamma.jpg" class="img-fluid rounded-start"
+        <div class="card mb-3 p-2 col-12 col-xl-6" style="">
+            <div class="d-flex flex-column flex-md-row">
+                
+                <div class=" d-flex align-items-center justify-content-center">
+                    <img src="assets/img/menu/pates-truffe.png" class="img-fluid img-offer"
                          alt="Image de pâtes à la truffe">
                 </div>
-                <div class="col-md-8">
+                
+                <div class="">
                     <div class="card-body">
-                        <h3 class="card-title">Menu du moment</h3>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Tagliatelles à la truffe</li>
-                            <li class="list-group-item">Boisson au choix*</li>
-                            <li class="list-group-item">Tiramisu café</li>
+                        <h3 class="card-title fw-bold">Menu du moment</h3>
+                        <p class="card-text fw-bold yellow cursive">11,99 €</p>
+                        <ul>
+                            <li>Tagliatelles à la truffe</li>
+                            <li>Boisson au choix*</li>
+                            <li>Tiramisu café</li>
                         </ul>
-                        <p class="card-text text-end fw-bold"><small class="text-body-secondary">Tarif : 11,99 €</small>
-                        </p>
                     </div>
                 </div>
+                
             </div>
         </div>
 
@@ -44,7 +90,7 @@
             <div class="card mb-3" style="max-width: 600px;">
                 <div class="row g-0 flex-row-reverse">
                     <div class="col-md-4">
-                        <img src="assets/img/menu/pates-a-la-carbonara.jpg" class="img-fluid rounded-start"
+                        <img src="assets/img/menu/pates-a-la-carbonara.jpg" class="img-fluid"
                              alt="Image de pâtes à la carbonara">
                     </div>
                     <div class="col-md-8">
@@ -55,7 +101,7 @@
                                 <li class="list-group-item">Boisson au choix*</li>
                                 <li class="list-group-item">Cookie pépites de chocolat</li>
                             </ul>
-                            <p class="card-text text-end fw-bold"><small class="text-body-secondary">Tarif : 8,99
+                            <p class="card-text text-end fw-bold"><small class="text-body-secondary">8,99
                                     €</small></p>
                         </div>
                     </div>
@@ -67,7 +113,7 @@
         <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
                 <div class="col-md-3">
-                    <img src="assets/img/menu/tagliatelles-au-saumon-scaled.jpg" class="img-fluid rounded-start"
+                    <img src="assets/img/menu/tagliatelles-au-saumon-scaled.png" class="img-fluid"
                          alt="Image de tagliatelles au saumon">
                 </div>
                 <div class="col-md-8">
@@ -78,7 +124,7 @@
                             <li class="list-group-item">Boisson au choix*</li>
                             <li class="list-group-item">Donut au sucre</li>
                         </ul>
-                        <p class="card-text text-end fw-bold"><small class="text-body-secondary">Tarif : 8,99 €</small>
+                        <p class="card-text text-end fw-bold"><small class="text-body-secondary">8,99 €</small>
                         </p>
                     </div>
                 </div>
@@ -91,8 +137,8 @@
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0 flex-row-reverse">
                     <div class="col-md-4">
-                        <img src="assets/img/menu/Salade-Caprese-©Gita-Kulinitch-Studio.-shutterstock.webp"
-                            class="img-fluid rounded-start" alt="Image de salade tomate mozza">
+                        <img src="assets/img/menu/Salade-Caprese-©Gita-Kulinitch-Studio.-shutterstock.png"
+                            class="img-fluid" alt="Image de salade tomate mozza">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -103,7 +149,7 @@
                                 <li class="list-group-item">Boisson au choix*</li>
                                 <li class="list-group-item">Salade de fruit</li>
                             </ul>
-                            <p class="card-text text-end fw-bold"><small class="text-body-secondary">Tarif : 9,99
+                            <p class="card-text text-end fw-bold"><small class="text-body-secondary">9,99
                                     €</small></p>
                         </div>
                     </div>
@@ -134,9 +180,28 @@
         </div>
     </div>
 
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Footer -->
+    <footer class="mt-5 mb-3">
+        <!-- Social -->
+        <div class="text-center mb-3">
+            <a><i class="fa-brands fa-twitter me-3"></i></a>
+            <a><i class="fa-brands fa-facebook me-3"></i></a>
+            <a><i class="fa-brands fa-tiktok me-3"></i></a>
+            <a><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        
+        <!-- Legal -->
+        <div class="text-center mt-4 mb-3 legal">
+            <a class="me-3">Crédits</a><a class="ms-2">Mentions légales</a>
+        </div>
+        
+        <!-- Copyright -->
+        <p class="text-center">&copy; 2023 Pastatruck Compiègne</p>
+    </footer>
+    
+    
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://share.alkanife.dev/dist/pagesize-widget.js"></script>
 </body>
 
 </html>

@@ -29,11 +29,17 @@ a:hover {
     position: fixed;
     top: 0;
     width: 100%;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .navbar hr {
     margin: 10px;
     opacity: .10;
+}
+
+.navbar .nav-item a {
+    padding: 0;
+    font-size: 130%;
 }
 
 .yellow {
@@ -119,13 +125,15 @@ a:hover {
     background: #eac960;
 }
 
-img {
-    max-height: 246px;
-    max-width: 246px;
+@media (min-width: 768px) {
+    .img-offer {
+        max-height: 246px;
 
-    min-height: 160px;
-    min-width: 160px;
+        min-height: 160px;
+        min-width: 160px;
+    }
 }
+
 
 .week-offer {
     user-select: none;
@@ -154,4 +162,42 @@ footer a:hover {
 
 footer .legal {
     text-decoration: underline;
+}
+
+#feedback {
+    margin-top: 90px;
+}
+
+#feedback a {
+    text-decoration: underline;
+}
+
+.card {
+    z-index: -200;
+}
+
+.price-hm {
+    font-size: 140%;
+    color: #9e9e9e;
+}
+
+.card {
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.25);
+    border: none;
+    color: white;
+}
+
+#menus {
+    padding-top: 90px
+}
+
+.card-body p {
+    font-size: 130%;
+}
+
+.list-group-item {
+    background: none;
+    color: white;
+    border: none
 }
