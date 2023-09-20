@@ -1,0 +1,104 @@
+/*
+ */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background: #292c2f;
+}
+
+.cursive {
+    font-family: 'Lobster', cursive;
+}
+
+.navbar {
+    background: #18191c;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar hr {
+    margin: 10px;
+    opacity: .10;
+}
+
+.yellow {
+    color: #eac960;
+}
+
+#banner {
+    margin-top: 56px;
+    background: url('pasta-3547078_1280.jpg') no-repeat ;
+    background-size: cover;
+    height: 150px;
+}
+
+#banner .banner-text {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.40);
+}
+
+#banner .banner-text p {
+    width: fit-content;
+}
+
+.bg-card {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.offer-details span {
+    color: #9e9e9e;
+    font-size: 15px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.offer-details span:hover {
+    opacity: 50%;
+}
+
+.menu-button {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    width: 100vw;
+    max-width: 400px;
+    background: #eac960;
+    border: 1px solid #eac960;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    color: white;
+    border: 1px solid white;
+}
+
+.menu-button-trans {
+    color: #eac960;
+    text-decoration: none;
+    padding: 10px;
+    width: 100vw;
+    max-width: 400px;
+    border: 1px solid #eac960;
+    cursor: pointer;
+}
+
+.menu-button-trans:hover {
+    color: white;
+    border: 1px solid white;
+    background: #eac960;
+}
+
+img {
+    max-height: 246px;
+    max-width: 246px;
+}
+
+.planning h5 {
+    font-size: 30px;
+}
+
+footer a {
+    color: white;
+}
